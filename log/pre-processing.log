@@ -1,0 +1,17 @@
+2024-12-08 16:39:59,860 - INFO - Starting sentiment analysis at 2024-12-08 16:39:59.860678
+2024-12-08 16:40:02,046 - INFO - Original number of rows: 1048576
+2024-12-08 16:40:02,046 - INFO - Converting dates...
+2024-12-08 16:41:09,066 - WARNING - Found 1 invalid dates
+2024-12-08 16:41:09,157 - INFO - Rows remaining after removing invalid dates: 1048575
+2024-12-08 16:41:09,541 - INFO - Number of rows after removing duplicates: 1048044
+2024-12-08 16:42:29,153 - INFO - 
+Processing Statistics:
+2024-12-08 16:42:29,153 - INFO - Total processing time: 149.29 seconds
+2024-12-08 16:42:29,154 - INFO - Final number of processed tweets: 1048044
+2024-12-08 16:42:29,154 - INFO - 
+Sentiment Distribution:
+2024-12-08 16:42:29,166 - INFO - Series([], )
+2024-12-08 16:42:29,166 - INFO - 
+Accuracy Metrics:
+2024-12-08 16:42:29,167 - INFO - TextBlob accuracy: 0.00%
+2024-12-08 16:42:29,167 - INFO - VADER accuracy: 0.00%

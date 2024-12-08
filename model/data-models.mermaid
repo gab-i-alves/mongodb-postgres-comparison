@@ -1,0 +1,64 @@
+classDiagram
+    %% PostgreSQL Model (Left side)
+    class Users {
+        user_id: SERIAL PRIMARY KEY
+        username: VARCHAR(50)
+        flag: VARCHAR(50)
+    }
+    
+    class Tweets {
+        tweet_id: BIGINT PRIMARY KEY
+        user_id: INTEGER FK
+        date: TIMESTAMP
+        original_text: TEXT
+        cleaned_text: TEXT
+        original_sentiment: VARCHAR(20)
+    }
+    
+    class SentimentAnalysis {
+        sentiment_id: SERIAL PRIMARY KEY
+        tweet_id: BIGINT FK
+        target: INTEGER
+        textblob_sentiment: VARCHAR(20)
+        vader_sentiment: VARCHAR(20)
+        textblob_polarity: FLOAT
+        vader_compound: FLOAT
+        comparison_textblob: BOOLEAN
+        comparison_vader: BOOLEAN
+    }
+    
+    Users "1" -- "many" Tweets: has
+    Tweets "1" -- "1" SentimentAnalysis: has
+    
+    %% MongoDB Model (Right side)
+    class MongoDBDocument {
+        _id: ObjectId
+        tweet_id: Integer
+        date: String
+        user: Object
+        content: Object
+        sentiment_analysis: Object
+    }
+    
+    class UserObject {
+        username: String
+        flag: String
+    }
+    
+    class ContentObject {
+        original_text: String
+        cleaned_text: String
+        original_sentiment: String
+    }
+    
+    class SentimentAnalysisObject {
+        target: Integer
+        textblob_sentiment: String
+        vader_sentiment: String
+        textblob_polarity: Float
+        vader_compound: Float
+    }
+    
+    MongoDBDocument *-- UserObject: contains
+    MongoDBDocument *-- ContentObject: contains
+    MongoDBDocument *-- SentimentAnalysisObject: contains

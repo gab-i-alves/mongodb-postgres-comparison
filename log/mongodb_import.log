@@ -1,0 +1,35 @@
+2024-12-07 11:36:22,473 - INFO - Starting MongoDB import at 2024-12-07 11:36:22.473001
+2024-12-07 11:36:22,476 - INFO - Successfully connected to MongoDB
+2024-12-07 11:36:22,476 - INFO - Database 'sentiment_analysis' dropped successfully
+2024-12-07 11:36:26,384 - INFO - Loaded 1048044 rows from CSV
+2024-12-07 11:37:22,659 - INFO - Prepared 1048044 valid documents for import
+2024-12-07 11:37:22,697 - INFO - Attempting to insert 1048044 valid documents
+2024-12-07 11:37:23,928 - INFO - Memory usage: 1927.14 MB
+2024-12-07 11:37:24,249 - INFO - Memory usage: 1946.52 MB
+2024-12-07 11:37:24,930 - INFO - Memory usage: 1965.77 MB
+2024-12-07 11:37:25,252 - INFO - Memory usage: 1985.14 MB
+2024-12-07 11:37:25,575 - INFO - Memory usage: 2004.52 MB
+2024-12-07 11:37:25,896 - INFO - Memory usage: 2023.89 MB
+2024-12-07 11:37:26,221 - INFO - Memory usage: 2043.14 MB
+2024-12-07 11:37:26,548 - INFO - Memory usage: 2062.52 MB
+2024-12-07 11:37:26,909 - INFO - Memory usage: 2081.89 MB
+2024-12-07 11:37:27,704 - INFO - Memory usage: 2101.14 MB
+2024-12-07 11:37:28,050 - INFO - Memory usage: 2120.52 MB
+2024-12-07 11:37:28,386 - INFO - Memory usage: 2139.89 MB
+2024-12-07 11:37:28,770 - INFO - Memory usage: 2159.14 MB
+2024-12-07 11:37:29,138 - INFO - Memory usage: 2178.52 MB 
+2024-12-07 11:37:29,484 - INFO - Memory usage: 2197.77 MB
+2024-12-07 11:37:29,963 - INFO - Memory usage: 2217.14 MB
+2024-12-07 11:37:30,329 - INFO - Memory usage: 2236.52 MB
+2024-12-07 11:37:30,695 - INFO - Memory usage: 2255.89 MB
+2024-12-07 11:37:31,449 - INFO - Memory usage: 2275.14 MB
+2024-12-07 11:37:31,778 - INFO - Memory usage: 2294.52 MB
+2024-12-07 11:37:32,120 - INFO - Memory usage: 2313.89 MB
+2024-12-07 11:37:32,424 - INFO - Import completed: 1048044 documents inserted, 0 failed
+2024-12-07 11:37:51,165 - INFO - Import Summary:
+2024-12-07 11:37:51,166 - INFO - Total time: 88.40 seconds
+2024-12-07 11:37:51,166 - INFO - Documents processed: 1048044
+2024-12-07 11:37:51,166 - INFO - Documents inserted: 1048044
+2024-12-07 11:37:51,166 - INFO - Failed inserts: 0
+2024-12-07 11:37:51,166 - INFO - Final collection count: 1048044
+2024-12-07 11:37:51,166 - INFO - Average insertion rate: 11855.53 documents/second

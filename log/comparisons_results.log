@@ -1,0 +1,62 @@
+2024-12-08 16:45:16,976 - INFO - Running mongodb_find - Iteration 1/3
+2024-12-08 16:45:17,983 - INFO - Running mongodb_find - Iteration 2/3
+2024-12-08 16:45:18,991 - INFO - Running mongodb_find - Iteration 3/3
+2024-12-08 16:45:19,997 - INFO - Running postgres_select - Iteration 1/3
+2024-12-08 16:45:21,007 - INFO - Running postgres_select - Iteration 2/3
+2024-12-08 16:45:22,013 - INFO - Running postgres_select - Iteration 3/3
+2024-12-08 16:45:23,020 - INFO - Running mongodb_text_search - Iteration 1/3
+2024-12-08 16:45:24,028 - INFO - Running mongodb_text_search - Iteration 2/3
+2024-12-08 16:45:25,037 - INFO - Running mongodb_text_search - Iteration 3/3
+2024-12-08 16:45:26,046 - INFO - Running postgres_text_search - Iteration 1/3
+2024-12-08 16:45:27,088 - INFO - Running postgres_text_search - Iteration 2/3
+2024-12-08 16:45:28,122 - INFO - Running postgres_text_search - Iteration 3/3
+2024-12-08 16:45:29,175 - INFO - Running mongodb_aggregation - Iteration 1/3
+2024-12-08 16:45:31,129 - INFO - Running mongodb_aggregation - Iteration 2/3
+2024-12-08 16:45:33,077 - INFO - Running mongodb_aggregation - Iteration 3/3
+2024-12-08 16:45:35,035 - INFO - Running postgres_aggregation - Iteration 1/3
+2024-12-08 16:45:36,125 - INFO - Running postgres_aggregation - Iteration 2/3
+2024-12-08 16:45:37,186 - INFO - Running postgres_aggregation - Iteration 3/3
+2024-12-08 16:45:38,253 - INFO - Running mongodb_lookup - Iteration 1/3
+2024-12-08 16:45:39,261 - INFO - Running mongodb_lookup - Iteration 2/3
+2024-12-08 16:45:40,272 - INFO - Running mongodb_lookup - Iteration 3/3
+2024-12-08 16:45:41,280 - INFO - Running postgres_join - Iteration 1/3
+2024-12-08 16:45:42,288 - INFO - Running postgres_join - Iteration 2/3
+2024-12-08 16:45:43,295 - INFO - Running postgres_join - Iteration 3/3
+2024-12-08 16:45:46,073 - INFO - Benchmark Summary:
+2024-12-08 16:45:46,073 - INFO - SIMPLE_QUERIES:
+2024-12-08 16:45:46,073 - INFO -   mongodb_find:
+2024-12-08 16:45:46,073 - INFO -     Mean: 0.0019s
+2024-12-08 16:45:46,073 - INFO -     Median: 0.0018s
+2024-12-08 16:45:46,073 - INFO -     Std Dev: 0.0008s
+2024-12-08 16:45:46,073 - INFO -   postgres_select:
+2024-12-08 16:45:46,073 - INFO -     Mean: 0.0026s
+2024-12-08 16:45:46,073 - INFO -     Median: 0.0017s
+2024-12-08 16:45:46,073 - INFO -     Std Dev: 0.0024s
+2024-12-08 16:45:46,073 - INFO - TEXT_SEARCH:
+2024-12-08 16:45:46,073 - INFO -   mongodb_text_search:
+2024-12-08 16:45:46,073 - INFO -     Mean: 0.0031s
+2024-12-08 16:45:46,073 - INFO -     Median: 0.0032s
+2024-12-08 16:45:46,073 - INFO -     Std Dev: 0.0003s
+2024-12-08 16:45:46,073 - INFO -   postgres_text_search:
+2024-12-08 16:45:46,073 - INFO -     Mean: 0.0377s
+2024-12-08 16:45:46,074 - INFO -     Median: 0.0367s
+2024-12-08 16:45:46,074 - INFO -     Std Dev: 0.0094s
+2024-12-08 16:45:46,074 - INFO - AGGREGATIONS:
+2024-12-08 16:45:46,074 - INFO -   mongodb_aggregation:
+2024-12-08 16:45:46,074 - INFO -     Mean: 0.9483s
+2024-12-08 16:45:46,074 - INFO -     Median: 0.9485s
+2024-12-08 16:45:46,074 - INFO -     Std Dev: 0.0048s
+2024-12-08 16:45:46,074 - INFO -   postgres_aggregation:
+2024-12-08 16:45:46,074 - INFO -     Mean: 0.0673s
+2024-12-08 16:45:46,074 - INFO -     Median: 0.0619s
+2024-12-08 16:45:46,074 - INFO -     Std Dev: 0.0150s
+2024-12-08 16:45:46,074 - INFO - JOINS:
+2024-12-08 16:45:46,074 - INFO -   mongodb_lookup:
+2024-12-08 16:45:46,074 - INFO -     Mean: 0.0043s
+2024-12-08 16:45:46,074 - INFO -     Median: 0.0032s
+2024-12-08 16:45:46,074 - INFO -     Std Dev: 0.0020s
+2024-12-08 16:45:46,074 - INFO -   postgres_join:
+2024-12-08 16:45:46,074 - INFO -     Mean: 0.0026s
+2024-12-08 16:45:46,074 - INFO -     Median: 0.0023s
+2024-12-08 16:45:46,074 - INFO -     Std Dev: 0.0005s
+2024-12-08 16:45:46,074 - INFO - Benchmark completed successfully. Check comparison_report.json and visualization files.

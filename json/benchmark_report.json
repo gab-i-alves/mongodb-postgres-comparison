@@ -1,0 +1,125 @@
+{
+  "timestamp": "2024-12-08T16:45:44.302203",
+  "summary": {
+    "test_categories": [
+      "simple_queries",
+      "text_search",
+      "aggregations",
+      "joins"
+    ],
+    "total_queries_executed": 8,
+    "iterations_per_query": 3,
+    "overall_findings": [
+      "In simple_queries, MongoDB was 25.9% faster on average (mongodb_find vs postgres_select)",
+      "In text_search, MongoDB was 91.7% faster on average (mongodb_text_search vs postgres_text_search)",
+      "In aggregations, PostgreSQL was 1309.7% faster on average (mongodb_aggregation vs postgres_aggregation)",
+      "In joins, PostgreSQL was 65.7% faster on average (mongodb_lookup vs postgres_join)"
+    ]
+  },
+  "detailed_results": {
+    "simple_queries": {
+      "mongodb_find": {
+        "mean": 0.001890261967976888,
+        "median": 0.0017733573913574219,
+        "std_dev": 0.0008099423499352646,
+        "min": 0.0011451244354248047,
+        "max": 0.0027523040771484375,
+        "all_iterations": [
+          0.0017733573913574219,
+          0.0027523040771484375,
+          0.0011451244354248047
+        ]
+      },
+      "postgres_select": {
+        "mean": 0.002552588780721029,
+        "median": 0.0017290115356445312,
+        "std_dev": 0.0023620037823627615,
+        "min": 0.0007126331329345703,
+        "max": 0.005216121673583984,
+        "all_iterations": [
+          0.005216121673583984,
+          0.0007126331329345703,
+          0.0017290115356445312
+        ]
+      }
+    },
+    "text_search": {
+      "mongodb_text_search": {
+        "mean": 0.0031258265177408853,
+        "median": 0.003185749053955078,
+        "std_dev": 0.0002615008770172238,
+        "min": 0.0028395652770996094,
+        "max": 0.0033521652221679688,
+        "all_iterations": [
+          0.0028395652770996094,
+          0.0033521652221679688,
+          0.003185749053955078
+        ]
+      },
+      "postgres_text_search": {
+        "mean": 0.03773617744445801,
+        "median": 0.03671693801879883,
+        "std_dev": 0.009363269269362573,
+        "min": 0.028924226760864258,
+        "max": 0.04756736755371094,
+        "all_iterations": [
+          0.03671693801879883,
+          0.028924226760864258,
+          0.04756736755371094
+        ]
+      }
+    },
+    "aggregations": {
+      "mongodb_aggregation": {
+        "mean": 0.9482611020406088,
+        "median": 0.9485018253326416,
+        "std_dev": 0.004790671894965183,
+        "min": 0.943354606628418,
+        "max": 0.9529268741607666,
+        "all_iterations": [
+          0.9485018253326416,
+          0.943354606628418,
+          0.9529268741607666
+        ]
+      },
+      "postgres_aggregation": {
+        "mean": 0.06726702054341634,
+        "median": 0.06187272071838379,
+        "std_dev": 0.015006444692085272,
+        "min": 0.05570340156555176,
+        "max": 0.08422493934631348,
+        "all_iterations": [
+          0.08422493934631348,
+          0.05570340156555176,
+          0.06187272071838379
+        ]
+      }
+    },
+    "joins": {
+      "mongodb_lookup": {
+        "mean": 0.004312276840209961,
+        "median": 0.0032303333282470703,
+        "std_dev": 0.001986101293367523,
+        "min": 0.0031020641326904297,
+        "max": 0.006604433059692383,
+        "all_iterations": [
+          0.0032303333282470703,
+          0.006604433059692383,
+          0.0031020641326904297
+        ]
+      },
+      "postgres_join": {
+        "mean": 0.0026023387908935547,
+        "median": 0.0023305416107177734,
+        "std_dev": 0.000501424881004886,
+        "min": 0.0022954940795898438,
+        "max": 0.003180980682373047,
+        "all_iterations": [
+          0.003180980682373047,
+          0.0022954940795898438,
+          0.0023305416107177734
+        ]
+      }
+    }
+  }
+}

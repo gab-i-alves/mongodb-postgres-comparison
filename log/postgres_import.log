@@ -1,0 +1,26 @@
+2024-12-07 11:38:27,415 - INFO - Starting PostgreSQL import at 2024-12-07 11:38:27.415016
+2024-12-07 11:38:27,424 - INFO - Successfully connected to postgres
+2024-12-07 11:38:27,835 - INFO - Database sentiment_analysis created successfully
+2024-12-07 11:38:27,847 - INFO - Successfully connected to sentiment_analysis
+2024-12-07 11:38:27,868 - INFO - Tables created successfully
+2024-12-07 11:38:27,878 - INFO - Indexes created successfully
+2024-12-07 11:38:31,618 - INFO - Loaded 1048044 rows from CSV
+2024-12-07 11:38:31,618 - INFO - Columns in dataset: ['target', 'ids', 'date', 'flag', 'user', 'text', 'cleaned_text', 'textblob_sentiment', 'vader_sentiment', 'textblob_polarity', 'vader_compound', 'original_sentiment', 'comparison_textblob', 'comparison_vader']
+2024-12-07 11:38:31,785 - INFO - First few rows of user and flag columns:
+2024-12-07 11:38:31,825 - INFO -            user      flag
+0    tpchandler  NO_QUERY
+1  davidlmulder  NO_QUERY
+2      LeeLHoke  NO_QUERY
+3       bigenya  NO_QUERY
+4      dandykim  NO_QUERY
+2024-12-07 11:38:31,925 - INFO - Available columns: ['target', 'ids', 'date', 'flag', 'username', 'text', 'cleaned_text', 'textblob_sentiment', 'vader_sentiment', 'textblob_polarity', 'vader_compound', 'original_sentiment', 'comparison_textblob', 'comparison_vader']
+2024-12-07 11:38:32,450 - INFO - Preparing to insert 511366 unique users
+2024-12-07 11:38:38,689 - INFO - Inserted 511366 users
+2024-12-07 11:38:38,755 - INFO - Memory usage: 685.60 MB, CPU usage: 0.0%
+2024-12-07 11:39:45,469 - INFO - Inserted 1048044 tweets
+2024-12-07 11:39:45,624 - INFO - Memory usage: 689.70 MB, CPU usage: 0.0%
+2024-12-07 11:40:39,440 - INFO - Inserted 1048044 sentiment records
+2024-12-07 11:40:39,536 - INFO - Memory usage: 691.38 MB, CPU usage: 0.0%
+2024-12-07 11:40:39,536 - INFO - Import Summary:
+2024-12-07 11:40:39,536 - INFO - Total time: 132.12 seconds
+2024-12-07 11:40:39,536 - INFO - Data imported successfully!

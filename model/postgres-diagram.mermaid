@@ -1,0 +1,50 @@
+flowchart TD
+    subgraph Main Process
+        A[Start] --> B[Configure Logging]
+        B --> C[Initialize PostgresImporter]
+        C --> D[Create Database]
+        D --> E[Create Tables]
+        E --> F[Load CSV Data]
+    end
+
+    subgraph Database Schema
+        E --> T1[Create Users Table]
+        E --> T2[Create Tweets Table]
+        E --> T3[Create Sentiment Analysis Table]
+        T1 --> I1[Create Indexes]
+        T2 --> I1
+        T3 --> I1
+    end
+
+    subgraph Data Import Process
+        F --> G[Validate Data]
+        G --> H[Check Required Columns]
+        H --> J[Process Users]
+        J --> K[Process Tweets]
+        K --> L[Process Sentiment]
+    end
+
+    subgraph Batch Processing
+        J --> M1[Batch Insert Users]
+        K --> M2[Batch Insert Tweets]
+        L --> M3[Batch Insert Sentiment]
+        
+        M1 --> N[Monitor Resources]
+        M2 --> N
+        M3 --> N
+    end
+
+    subgraph Error Handling
+        M1 --> O[Handle Duplicates]
+        M2 --> P[Handle Foreign Keys]
+        M3 --> Q[Handle Data Types]
+    end
+
+    N --> R[Log Statistics]
+    R --> S[Close Connections]
+    S --> U[End]
+
+    classDef process fill:#f9f,stroke:#333,stroke-width:2px
+    classDef data fill:#bbf,stroke:#333,stroke-width:2px
+    class A,U process
+    class F,M1,M2,M3 data

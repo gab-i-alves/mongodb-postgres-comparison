@@ -1,0 +1,42 @@
+flowchart TD
+    subgraph Main Process
+        A[Start] --> B[Configure Logging]
+        B --> C[Initialize SentimentAnalyzer]
+        C --> D[Load CSV Data]
+        D --> E[Handle Duplicates]
+        E --> F[Split Data into Chunks]
+    end
+
+    subgraph Parallel Processing
+        F --> |Chunk 1| G1[Process Chunk]
+        F --> |Chunk 2| G2[Process Chunk]
+        F --> |Chunk N| G3[Process Chunk]
+        
+        G1 --> H[Combine Results]
+        G2 --> H
+        G3 --> H
+    end
+
+    subgraph SentimentAnalyzer Class
+        I[Initialize VADER] --> J[Preprocess Text]
+        J --> K[Analyze Sentiment]
+        K --> L[Calculate TextBlob Score]
+        K --> M[Calculate VADER Score]
+    end
+
+    subgraph Text Processing
+        J --> N[Remove URLs]
+        N --> O[Remove Mentions]
+        O --> P[Remove Hashtags]
+        P --> Q[Clean Special Characters]
+    end
+
+    H --> R[Add Summary Statistics]
+    R --> S[Save Results to CSV]
+    S --> T[Log Processing Statistics]
+    T --> U[End]
+
+    classDef process fill:#f9f,stroke:#333,stroke-width:2px
+    classDef data fill:#bbf,stroke:#333,stroke-width:2px
+    class A,U process
+    class D,S data

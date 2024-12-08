@@ -1,0 +1,48 @@
+flowchart TD
+    subgraph Main Process
+        A[Start] --> B[Configure Logging]
+        B --> C[Initialize MongoDBImporter]
+        C --> D[Connect to MongoDB]
+        D --> E[Delete Existing Database]
+        E --> F[Load CSV Data]
+    end
+
+    subgraph Document Preparation
+        F --> G[Create Document Structure]
+        G --> H[Convert Data Types]
+        H --> I[Handle Missing Values]
+        I --> J[Validate Documents]
+    end
+
+    subgraph Batch Processing
+        J --> K[Create Batch Operations]
+        K --> L[Process Batch]
+        L --> M[Monitor Progress]
+        M --> N[Check Memory Usage]
+    end
+
+    subgraph Index Creation
+        O[Create Indexes] --> P1[Tweet ID Index]
+        O --> P2[Date Index]
+        O --> P3[Username Index]
+        O --> P4[Sentiment Index]
+        O --> P5[Text Search Index]
+    end
+
+    subgraph Error Handling
+        L --> Q[Handle BulkWriteError]
+        Q --> R1[Log Failed Operations]
+        Q --> R2[Continue with Next Batch]
+        R2 --> L
+    end
+
+    N --> S[Create Indexes]
+    S --> O
+    O --> T[Log Statistics]
+    T --> U[Close Connection]
+    U --> V[End]
+
+    classDef process fill:#f9f,stroke:#333,stroke-width:2px
+    classDef data fill:#bbf,stroke:#333,stroke-width:2px
+    class A,V process
+    class F,L data
