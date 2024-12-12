@@ -60,3 +60,15 @@
 2024-12-08 16:45:46,074 - INFO -     Median: 0.0023s
 2024-12-08 16:45:46,074 - INFO -     Std Dev: 0.0005s
 2024-12-08 16:45:46,074 - INFO - Benchmark completed successfully. Check comparison_report.json and visualization files.
+2024-12-09 14:37:25,992 - INFO - Running mongodb_find - Iteration 1/3
+2024-12-09 14:37:27,004 - INFO - Running mongodb_find - Iteration 2/3
+2024-12-09 14:37:28,011 - INFO - Running mongodb_find - Iteration 3/3
+2024-12-09 14:37:29,019 - INFO - Running postgres_select - Iteration 1/3
+2024-12-09 14:37:30,047 - INFO - Running postgres_select - Iteration 2/3
+2024-12-09 14:37:31,054 - INFO - Running postgres_select - Iteration 3/3
+2024-12-09 14:37:32,060 - INFO - Running mongodb_text_search - Iteration 1/3
+2024-12-09 14:37:33,100 - INFO - Running mongodb_text_search - Iteration 2/3
+2024-12-09 14:37:34,107 - INFO - Running mongodb_text_search - Iteration 3/3
+2024-12-09 14:37:35,114 - INFO - Running postgres_text_search - Iteration 1/3
+2024-12-09 14:37:36,170 - INFO - Running postgres_text_search - Iteration 2/3
+2024-12-09 14:37:37,225 - INFO - Running postgres_text_search - Iteration 3/3
